@@ -1,0 +1,36 @@
+#home-wrapper{
+    position: relative;
+    background-image: url(../../../assets/img/bg1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: calc(75vh - 77px);
+    padding: 20px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.img-wrapper{
+    display: inline-block;
+}
+
+.img-wrapper .title .laptop{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo{
+    width: 10%;
+}
+
+.title{
+    width: 100%;
+    image-rendering: pixelated;
+}
+
+.laptop{
+    width: 100%;
+    image-rendering: pixelated;
+}

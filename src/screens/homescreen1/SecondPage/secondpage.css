@@ -1,0 +1,70 @@
+#second-wrapper{
+    background-image: url(../../../assets/img/bg2.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150vh;
+    position: relative;
+}
+
+.nb {
+    position: absolute;
+    background-color: orange;
+    width: 100%;
+    height: 100px;
+    max-width: 100px;
+    display: flex;
+    border-radius: 50%;  
+    
+}
+
+#myDiv {
+    border: 3px dashed white;
+}
+
+.content {
+    background-color: rgb(223, 147, 6);
+    width: 100%;
+    max-width: 1165px;
+    height: 70px;
+    display: flex;
+    border-radius: 100px;
+    margin-top: 15px;
+}
+
+.item-wrapper{
+    display: flex;
+    width: 100%;
+    height: 17.4vh;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.item-wrapper:hover{
+    transform: scale(1.1);
+}
+
+h2{
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+}
+
+.content-wrapper{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding: 20px 70px;
+}
+
+/* .img-wrapper .title .laptop{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+} */
