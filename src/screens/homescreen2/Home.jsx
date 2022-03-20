@@ -1,28 +1,39 @@
 import FirstPage from "../homescreen1/FirstPage/FirstPage";
-import Logo from "../homescreen1/FirstPage/Logo";
+import Logo from "../homescreen1/Logo/Logo";
+import Footer from "../homescreen1/Footer/Footer";
 import SecondPage from "../homescreen1/SecondPage/SecondPage";
 import ThirdPage from "../homescreen1/ThirdPage/ThirdPage";
-import './home.css';
+import Slideshow from "../homescreen1/SlideShow/SlideShow";
+import Sale from "../homescreen1/Sale/Sale";
 
 export default function Home(){
     return(
-        <div className="center-relative">
-            {/* <div>
+        <div>
+            <div>
                 <FirstPage></FirstPage>
             </div>
                 
             <div>
                <Logo></Logo>
-            </div> */}
+            </div>
 
             <div>
                 <SecondPage></SecondPage>
             </div>
 
-            {/* <div>
+            <Slideshow></Slideshow>
+
+            <div>
                 <ThirdPage></ThirdPage>
-            </div> */}
+            </div>
+
+            <div>
+                <Sale></Sale>
+            </div>
             
+            <div>
+                <Footer></Footer>
+            </div>
             
         </div>
     )

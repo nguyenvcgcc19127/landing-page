@@ -1,36 +1,73 @@
-#home-wrapper{
+.home-wrapper{
     position: relative;
+    image-rendering: pixelated;
     background-image: url(../../../assets/img/bg1.png);
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    min-height: calc(75vh - 77px);
+    min-height: calc(30vh - 77px);
     padding: 20px;
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
-    align-items: center; */
+    align-items: center;
 }
 
 .img-wrapper{
     display: inline-block;
 }
 
-.img-wrapper .title .laptop{
+.logo{
+    position: absolute;
+    top: 5%;
+    width: 10%;
+    image-rendering: pixelated;
+}
+
+.title, .laptop{
+    width: 55%;
+    image-rendering: pixelated;
     display: flex;
     margin-right: auto;
     margin-left: auto;
 }
 
-.logo{
-    width: 10%;
+.mover-img {
+    -webkit-animation: move 1s infinite alternate;
+    animation: move 1s infinite alternate;
 }
 
-.title{
-    width: 100%;
-    image-rendering: pixelated;
+@keyframes move {
+    100% {
+        transform: translate(0, y);
+        transform: translate(0px,-20px);
+        -moz-transform: translate(0px,-20px);
+        -webkit-transform: translate(0px,-20px);
+        -o-transform: translate(0px,-20px);
+        -ms-transform: translate(0px,-20px);
+    }
 }
 
-.laptop{
-    width: 100%;
-    image-rendering: pixelated;
+@media screen and (min-width: 320px){
+    @keyframes move {
+        100% {
+            transform: translate(0, y);
+            transform: translate(0px,-8px);
+            -moz-transform: translate(0px,-8px);
+            -webkit-transform: translate(0px,-8px);
+            -o-transform: translate(0px,-8px);
+            -ms-transform: translate(0px,-8px);
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    @keyframes move {
+        100% {
+            transform: translate(0, y);
+            transform: translate(0px,-8px);
+            -moz-transform: translate(0px,-8px);
+            -webkit-transform: translate(0px,-8px);
+            -o-transform: translate(0px,-8px);
+            -ms-transform: translate(0px,-8px);
+        }
+    }
 }

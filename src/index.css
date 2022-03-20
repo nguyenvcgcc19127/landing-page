@@ -14,11 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-.center-relative{
-    margin-left: auto;
-    margin-right: auto;
-}
-
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, 
 pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, 
 small, strong, sub, sup, var, b, i, fieldset, form, label, legend, caption, 
@@ -34,10 +29,17 @@ hgroup, menu, nav, section, summary, time, mark, audio, video {
 }
 
 h1{
+    font-family: 'UTM Neutra', sans-serif;
     font-weight: bold;
-    font-size: 33px;
+    font-size: 45px;
     color: orange;
     text-align: center;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 860px) {
+    h1{
+        font-size: 1.2rem;
+    }
 }

@@ -1,0 +1,92 @@
+#sale-wrapper{
+    position: relative;
+    background-color: black;
+    min-height: calc(60vh - 77px);
+    padding: 10px;
+}
+
+.sale{
+    background-image: url(../../../assets/img/bg4.png);
+    background-position: center;
+    background-size: cover;
+    min-height: calc(125vh - 77px);
+}
+
+.neonText {
+    font-weight: bold;
+    position: absolute;
+    animation: flicker 1.5s infinite alternate;
+    color: rgb(226, 203, 203);
+}
+
+.text-1{
+    font-size: 7rem;
+    top: 35%;
+    left: 8%;
+}
+
+.text-2{
+    font-size: 14rem;
+    top: 50%;
+    left: 8%;
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(255, 0, 0),
+        0 0 80px rgb(255, 0, 0),
+        0 0 90px rgb(255, 0, 0),
+        0 0 100px rgb(255, 0, 0),
+        0 0 150px rgb(255, 0, 0);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+  }   
+}
+
+@media only screen and (min-width: 320px) and (max-width: 860px) {
+    .sale{
+        min-height: calc(54vh - 77px);
+    }
+
+    .text-1{
+        font-size: 2.3rem;
+        top: 37%;
+        left: 10%;
+    }
+    
+    .text-2{
+        font-size: 5rem;
+        top: 50%;
+        left: 8.5%;
+    }
+
+    @keyframes flicker {
+    
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    
+            text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 15px #fff,
+            0 0 19px rgb(255, 0, 0),
+            0 0 20px rgb(255, 0, 0),
+            0 0 30px rgb(255, 0, 0),
+            0 0 40px rgb(255, 0, 0),
+            0 0 50px rgb(255, 0, 0);
+        
+        }
+        
+        20%, 24%, 55% {        
+            text-shadow: none;
+      }   
+    }
+}

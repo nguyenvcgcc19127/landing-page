@@ -1,0 +1,155 @@
+.slideshow-bg{
+  position: relative;
+  background-color: rgb(10, 10, 27);
+  min-height: calc(50vh - 77px);
+  padding: 10px;
+}
+
+/* title */
+
+.title-wrapper{
+  margin-bottom: 5%;
+}
+
+.slideshow-wrapper{
+  padding: 10px;
+}
+
+.slideshow-title{
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 300px;
+  
+}
+
+.slideshowSlider-title {
+  white-space: nowrap;
+  transition: ease 1000ms;
+  text-align: center;
+}
+
+.slide-title {
+  display: inline-block;
+  height: 10px;
+  width: 100%;
+} 
+
+/* Slideshow */
+
+.slideshow {
+  image-rendering: pixelated;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 600px;
+}
+  
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+}
+
+/* Buttons */
+
+.slideshowDots {
+  text-align: center;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px 7px 0px;
+  background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+  background-color: orange;
+}
+
+.mouse{
+  width: 15%;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.mouse-1{
+  position: absolute;
+  top: 90%;
+  left: 27.7%;
+}
+
+.mouse-2{
+  position: absolute;
+  top: 90%;
+  right: 5%;
+}
+
+.mouse:active{
+  transform: scale(0.8);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 860px) {
+
+  .slideshow {
+    max-width: 300px;
+  }
+  
+  .slide {
+    height: 200px;
+  }
+  
+  /* Buttons */
+  .slideshowDot {
+    height: 10px;
+    width: 10px;
+    margin: 0px 4px 0px;
+  }
+
+  /* title */
+
+  .title-wrapper{
+    margin-bottom: 0;
+  }
+
+  .slideshow-title{
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 200px;
+    
+  }
+
+  .slide-title {
+    display: inline-block;
+    height: 10px;
+    width: 100%;
+  } 
+
+  .mouse{
+    width: 7%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.5s;
+  }
+  
+  .mouse-1{
+    position: absolute;
+    top: 88%;
+    left: 19%;
+  }
+  
+  .mouse-2{
+    width: 75%;
+    position: absolute;
+    top: 88%;
+    left: 75%;
+  }
+}

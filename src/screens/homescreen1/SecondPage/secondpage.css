@@ -1,10 +1,9 @@
 #second-wrapper{
-    background-image: url(../../../assets/img/bg2.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 150vh;
     position: relative;
+    background-color: black;
+    min-height: calc(60vh - 77px);
+    padding: 10px;
+    
 }
 
 .nb {
@@ -14,8 +13,7 @@
     height: 100px;
     max-width: 100px;
     display: flex;
-    border-radius: 50%;  
-    
+    border-radius: 50%;    
 }
 
 #myDiv {
@@ -23,19 +21,16 @@
 }
 
 .content {
-    background-color: rgb(223, 147, 6);
+    background-color: rgb(202, 108, 0);
     width: 100%;
-    max-width: 1165px;
     height: 70px;
-    display: flex;
     border-radius: 100px;
     margin-top: 15px;
 }
 
 .item-wrapper{
-    display: flex;
     width: 100%;
-    height: 17.4vh;
+    height: 16vh;
     cursor: pointer;
     transform: scale(1);
     transition: all 0.5s;
@@ -56,15 +51,82 @@ h2{
 
 .content-wrapper{
     width: 100%;
-    min-height: 50vh;
+    padding: 0px 60px;
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding: 20px 70px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* .img-wrapper .title .laptop{
+.pos{
+    margin-top: 7%;
     display: flex;
-    margin-right: auto;
     margin-left: auto;
-} */
+    margin-right: auto;
+}
+
+.content-text{
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 5px 30px;
+    line-height: 1;
+}
+
+.content-text p{
+    font-size: 15px;
+    margin-left: 8%;
+}
+
+.content-text h3{
+    font-size: 17px;
+    margin-left: 8%;
+    padding: 2px 0px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 860px) {
+
+    .nb {
+        width: 100%;
+        height: 50px;
+        max-width: 50px; 
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .content {
+        width: 100%;
+        height: 35px;
+        margin-top: 2%;
+    }
+
+    .content-wrapper{
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .item-wrapper{
+        height: 8vh;
+    }
+
+    .content-text{
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .content-text p{
+        font-size: 6px;
+        margin-left: 10%;
+        
+    }
+    
+    .content-text h3{
+        font-size: 8px;
+        margin-left: 10%;
+        padding: 2px 0px;
+    }
+}
